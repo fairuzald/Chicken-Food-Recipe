@@ -1,0 +1,68 @@
+body {
+    max-width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+    background: black;
+    background: linear-gradient(0.17deg, #1a1b21 6.22%, #0c0c1b 139.21%);
+  
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .main {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  
+  /* div,
+  ul,
+  h2,
+  li,
+  p {
+      border: red 2px solid;
+  }
+  
+  nav {
+      border: green 2px solid;
+  }
+  */
+  .title{
+    margin-top:12vh;
+    margin-bottom:3vh;
+    text-align: center;
+  }
+  .detail-recipe{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .detail-recipe img{
+    padding:2rem ;
+    border-radius:40px;
+  }
+  .content-recipe{
+    padding:2rem ;
+    font-size: 2.3vh;
+    /* margin-left: 200px; */
+    width: 50%;
+  }
+  @media only screen and (max-width: 1255px) {
+    .content-recipe h3{
+      font-size:2.5vh;
+      text-align: center;
+    }
+    .content-recipe{
+      padding:2rem ;
+      font-size: 2.3vh;
+      /* margin-left: 200px; */
+      width: 70vw;
+  
+}}
