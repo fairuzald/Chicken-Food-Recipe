@@ -10,27 +10,34 @@
   <body>
     <div class="main">
       <header>
-        <nav>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="pages/menu.html">Menu</a></li>
-            <li>Contact</li>
-            <li>Credit</li>
-          </ul>
-        </nav>
-        <p>Fairuz | Chicken</p>
+        <div>
+          <button class="hamburger" id="hamburger">
+            <span class="hamburgerline-top"></span>
+            <span class="hamburgerline-mid"></span>
+            <span class="hamburgerline-bottom"></span>
+          </button>
+          <nav id="nav-menu" class="hidden">
+            <ul>
+              <li class="nav-list"><a href="">Home</a></li>
+              <li class="nav-list"><a href="pages/menu.html">Menu</a></li>
+              <li class="nav-list">Contact</li>
+              <li class="nav-list">Credit</li>
+            </ul>
+          </nav>
+        </div>
+        <p class="logo">Fairuz | KickIn Chicken</p>
       </header>
       <div class="content">
         <img class="bg" src="src/bg3.jpg" />
         <div class="label">
-          <p>Aneka Pengolahan Ayam</p>
+          <h2>KickIn Chicken</h2>
           <p>
-            welcome to our website to see various <br />processed chicken menus
+            Welcome to our website to see various processed chicken menus, We provide various kinds of processed chicken dishes from Indonesia
           </p>
-          <button>Show Menu</button>
+          <button><a  href="pages/menu.html">Show Menu</a></button>
         </div>
       </div>
     </div>
   </body>
-  <script href="index.tsx"></script>
+  <script src="src/index.js"></script>
 </html>
