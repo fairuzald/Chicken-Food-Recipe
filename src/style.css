@@ -35,7 +35,6 @@ p {
 .content img {
   width: 100vw;
   height: 100vh;
-  /* min-height: 99vh; pake query aja ntar*/
   display: flex;
   flex: 1 1 0%;
 
@@ -99,7 +98,7 @@ p {
     position: absolute;
     z-index: 20;
     right: 7vw;
-    top: 29vh;
+    top: 27vh;
     margin-top: auto;
     width: 30vw;
   }
@@ -110,7 +109,7 @@ p {
     position: absolute;
     z-index: 20;
     right: 7vw;
-    top: 18vh;
+    top: 23vh;
     margin-top: auto;
     width: 30vw;
   }
