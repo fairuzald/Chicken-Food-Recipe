@@ -5,8 +5,8 @@ body {
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
   color: white;
-  background: black;
-  background: linear-gradient(0.17deg, #1a1b21 6.22%, #0c0c1b 139.21%);
+  background: linear-gradient(to bottom right, #151515 6.22%, #151515 139.21%);
+
 
 }
 
@@ -44,7 +44,7 @@ nav {
   color: #e79033;
   margin-left: 10vw;
   margin-right: 10vw;
-  
+
 }
 
 .introduction p {
@@ -88,11 +88,6 @@ h2 {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-
-.details-menu h3:hover {
-  color: #f9ba33;
-}
-
 
 .details-menu p {
   color: rgb(148 163 184 / var(1));

@@ -12,12 +12,6 @@ header {
     position: fixed;
   }
   
-  header p {
-    margin-right: 8vw;
-    font-size: 2.6vh;
-    font-weight: 600;
-    color: #e79033;
-  }
   
   .nav-menu {
     display: flex;
@@ -65,6 +59,12 @@ header {
     .hamburger {
       display: none;
     }
+    header p {
+      margin-right: 8vw;
+      font-size: 3vh;
+      font-weight: 600;
+      color: #e79033;
+    }
   
     .nav-list::after {
       content: "";
@@ -104,6 +104,12 @@ header {
       position: relative;
       height: 60px;
     }
+    .logo {
+      margin-right: 8vw;
+      font-size: 2.5vh;
+      font-weight: 600;
+      color: #e79033;
+    }
   
     .hidden {
       display: none;
@@ -141,6 +147,9 @@ header {
       align-items: center;
       height: fit-content;
       width: 28vh;
+    }
+    .nav-menu li{
+      font-size:2vh;
     }
   
     .hamburger {
@@ -196,21 +205,5 @@ header {
       background-color: white;
     }
 
-    .logo{
-      font-size:3vh;
-      margin-top: 17px;
-    }
   }
   
-  @media only screen and (max-width: 630px) {
-    .logo{
-      font-size: 3.2vh;
-      margin-top:17px;
-    }
-  }
-  @media only screen and (max-width: 415px) {
-    .logo{
-      font-size: 3vh;
-      margin-top:17px;
-    }
-  }
