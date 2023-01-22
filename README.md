@@ -6,10 +6,10 @@ https://fairuzald.github.io/Chicken-Food-Recipe/index.html
 <br/>
 https://kickin-chicken.vercel.app/index.html
 
-##Identity
-Nama : Moh Fairuz Alauddin Yahya
-NIM : 19622075
-GDSC ID : 220020076
-Universitas: Intitut Teknologi bandung
-Jurusan : STEI-K
+## Identity<br/>
+Nama : Moh Fairuz Alauddin Yahya<br/>
+NIM : 19622075<br/>
+GDSC ID : 220020076<br/>
+Universitas: Intitut Teknologi bandung<br/>
+Jurusan : STEI-K<br/>
 
