@@ -92,10 +92,6 @@ p {
     margin-top: auto;
     width: 30vw;
   }
-  .logo{
-    font-size:3vh;
-    margin-top: 17px;
-  }
 }
 
 @media only screen and (max-width: 630px) {
@@ -107,10 +103,7 @@ p {
     margin-top: auto;
     width: 30vw;
   }
-  .logo{
-    font-size: 3.2vh;
-    margin-top:17px;
-  }
+
 }
 @media only screen and (max-width: 415px) {
   .label {
@@ -121,8 +114,20 @@ p {
     margin-top: auto;
     width: 30vw;
   }
-  .logo{
-    font-size: 3vh;
-    margin-top:17px;
+  .label h2{
+    font-size: 3.1vh;
+  }
+  .label p{
+    font-size: 2vh;
+  }
+  .label button{
+    background-color: #e79033;
+  padding: 1.4vh;
+  cursor: pointer;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 2.1vh;
+  font-weight: 550;
+  transition: transform 0.3s ease-in-out;
   }
 }

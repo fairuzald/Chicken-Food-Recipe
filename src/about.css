@@ -6,21 +6,21 @@ body {
     scroll-behavior: smooth;
     color: white;
     background: linear-gradient(to bottom right, #151515 6.22%, #151515 139.21%);
-  
-  }
-  
-  a {
+
+}
+
+a {
     color: inherit;
     text-decoration: none;
-  }
-  
-  .main {
+}
+
+.main {
     min-height: 100vh;
     width: 100vw;
     overflow-y: hidden;
-  }
-  
-  /* div,
+}
+
+/* div,
   ul,
   h2,h3,
   li,
@@ -32,51 +32,96 @@ body {
   nav {
       border: green 2px solid;
   } */
-.main h3{
-    margin-top:12vh;
-    margin-bottom:8vh;
+.main h3 {
+    margin-top: 12vh;
+    margin-bottom: 8vh;
     text-align: center;
-    font-size:4vh;
+    font-size: 4vh;
     color: #E79033;
     margin-left: 10vw;
     margin-right: 10vw;
-}  
-.about-content{
+}
+
+.about-content {
     display: flex;
     /* align-items: center;  */
     justify-content: center;
-    background-color:#242C30;
+    background-color: #242C30;
     border-radius: 30px;
     width: 70vw;
     padding-top: 3vh;
     padding-bottom: 3vh;
-    padding-left: 1vw;
+    padding-left: 2vh;
     padding-right: 2vh;
     margin: auto;
     overflow-y: scroll;
-    height:60vh;
+    height: 60vh;
     margin-bottom: 10vh;
 }
-.about-content div{
+
+.about-content div {
     display: flex;
-    margin:5vh;
+    margin: 5vh;
 }
-.about-content p{
+
+.about-content p {
     line-height: 1.7rem;
     text-align: justify;
+    font-size: 2.3vh;
 }
-.about-content a{
+
+.about-content a {
     color: #ffa647;
 }
-.about-content a:hover{
+
+.about-content a:hover {
     color: #ffc383;
 }
+
 #no-scrollbar::-webkit-scrollbar {
     display: none;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-  #no-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+@media only screen and (max-width: 415px) {
+    .main h3 {
+        margin-top: 12vh;
+        margin-bottom: 8vh;
+        text-align: center;
+        font-size: 3.4vh;
+        color: #E79033;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .about-content p {
+        line-height: 1.7rem;
+        text-align: justify;
+        font-size: 1.9vh;
+    }
+
+    .about-content {
+        display: flex;
+        /* align-items: center;  */
+        justify-content: center;
+        background-color: #242C30;
+        border-radius: 30px;
+        width: 70vw;
+        margin: auto;
+        overflow-y: scroll;
+        height: 60vh;
+        margin-bottom: 10vh;
+    }
+
+    .about-content div {
+        display: flex;
+        margin: 2vh;
+    }
+}

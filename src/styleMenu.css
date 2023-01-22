@@ -97,7 +97,7 @@ h2 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   color: #aaaaaa
 }
 
@@ -124,4 +124,75 @@ h2 {
 .content-menu img {
   width: 300px;
   height: 300px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 30px transparent;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f5a046;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(0.17deg, #ff7b00 1.22%, #ffbb00 59.21%);
+}
+
+@media only screen and (max-width: 415px) {
+  .introduction h1 {
+    text-align: center;
+    font-size: 3vh;
+    color: #e79033;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+  }
+
+  .introduction p {
+    text-align: justify;
+    font-size: 1.9vh;
+    margin-top: 5vh;
+    margin-left: 18vw;
+    margin-right: 18vw;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 6vh;
+    min-width: 40vw;
+    font-size: 2.8vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .details-menu h3 {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    font-size: 2.6vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .details-menu p {
+    color: rgb(148 163 184 / var(1));
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+    font-size: 1.7vh;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    color: #aaaaaa
+  }
 }
