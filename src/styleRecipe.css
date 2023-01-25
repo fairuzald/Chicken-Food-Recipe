@@ -19,24 +19,15 @@ a {
   min-height: 100vh;
   width: 100vw;
 }
-
-/* div,
-  ul,
-  h2,
-  li,
-  p {
-      border: red 2px solid;
-  }
-  
-  nav {
-      border: green 2px solid;
-  }
-  */
+ 
 .title {
   margin-top: 12vh;
   margin-bottom: 3vh;
   text-align: center;
   font-size: 4vh;
+  width:80vw;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .detail-recipe {
