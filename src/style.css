@@ -44,6 +44,11 @@ p {
   position: relative;
   margin: 0px;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  background: url(bg3.jpg) no-repeat;
+  background-size:cover;
+  background-position: center;
 }
 
 .label h2 {
