@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../src/ayam.png" />
+    <link rel="stylesheet" href="../style/styleMenu.css" />
+    <link rel="stylesheet" href="../src/styleHeader.css" />
+    <script src="../script/index.js"></script>
+    <script src="../script/scrollNavbar.js" defer></script>
+    <title>Kickin | Menu</title>
+  </head>
+  <body>
+    <div class="main">
+      <!-- NAVBAR SECTION -->
+      <header>
+        <div>
+          <button class="hamburger" id="hamburger">
+            <span class="hamburgerline-top"></span>
+            <span class="hamburgerline-mid"></span>
+            <span class="hamburgerline-bottom"></span>
+          </button>
+          <nav id="nav-menu" class="hidden">
+            <ul>
+              <li class="nav-list"><a href="../index.html">Home</a></li>
+              <li class="nav-list"><a href="recipes.html">Menu</a></li>
+              <li class="nav-list"><a href="../menu/about.html">About</a></li>
+              <li class="nav-list">Soon</li>
+            </ul>
+          </nav>
+        </div>
+        <p class="logo">
+          <a href="../index.html"
+            ><img src="../src/ayam.png" height="50" width="50"
+          /></a>
+        </p>
+      </header>
+      <!-- INTRODUCTION SECTION -->
+      <div class="introduction">
+        <h1>ALL MENU CHICKEN RECIPES</h1>
+        <p>
+          Here we present several menus related to processed chicken dishes
+          originating from the Indonesian region using kitchen spices which are
+          very easy for you to get and imitate, in which they contain related to
+          how to make and details of ingredients for cooking certain
+          preparations, I took them from sources which I will include on the
+          page credits.
+        </p>
+      </div>
+      <!-- SEARCHBAR SECTION -->
+      <div id="search-bar">
+        <input
+          id="search-input"
+          placeholder="Search Recipes"
+          oninput="handleSearch(event)"
+        />
+        <button id="icons" onclick="handleReset()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewbox="0 0 512 512"
+            height="20"
+            width="20"
+            id="search-icon"
+          >
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
+            />
+          </svg>
+        </button>
+      </div>
+      <h2>Enjoy It and Let's cook</h2>
+      
+      <div class="mapping" id="mapping">
+        <!-- Mapping data using JS -->
+      </div>
+    </div>
+  </body>
+</html>
