@@ -34,7 +34,7 @@ a {
   margin-right: 10vw;
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,7 +111,6 @@ h2 {
 .content-menu:hover {
   transform: scale(1.05);
   color: #f9ba33;
-
 }
 
 .content-menu img {
@@ -147,7 +146,35 @@ h2 {
     color: #e79033;
     margin-left: 10vw;
     margin-right: 10vw;
+  }
 
+  @media only screen and (max-width: 860px) {
+    #search-bar {
+      display: flex;
+      outline: none;
+      width: 30vw;
+      background-color: white;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 4px;
+    }
+    #icons {
+      margin-right: 3vw;
+      display: flex;
+      background: transparent;
+      cursor: pointer;
+      border-width: 0;
+      border-color: none;
+    }
+    #search-input {
+      text-align: center;
+      width: 20vw;
+      font-weight: 550;
+      flex: 1 1 0%;
+      outline: none;
+      border-width: 0;
+    }
   }
 
   .introduction p {
@@ -189,7 +216,8 @@ h2 {
     color: #aaaaaa
   }
 }
-#search-bar{
+
+#search-bar {
   display: flex;
   outline: none;
   width: 70vw;
@@ -200,8 +228,9 @@ h2 {
   padding: 4px;
 }
 
-#search-input{
-  margin: 0 170px 0 170px;
+#search-input {
+  margin-right: 2vw;
+  margin-left: 2vw;
   text-align: center;
   font-weight: 550;
   flex: 1 1 0%;
@@ -209,7 +238,7 @@ h2 {
   border-width: 0;
 }
 
-#icons{
+#icons {
   margin-right: 30px;
   display: flex;
   background: transparent;
@@ -218,7 +247,7 @@ h2 {
   border-color: none;
 }
 
-#search-icon{
+#search-icon {
   outline: none;
-  background:transparent;
+  background: transparent;
 }

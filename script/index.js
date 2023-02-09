@@ -1,14 +1,15 @@
+// Data Fetching
 const data = fetch(
   "https://www.themealdb.com/api/json/v1/1/filter.php?c=Chicken"
 )
   .then((res) => res.json())
   .then((dataAPI) => {
-    showData(dataAPI.meals);
+    outputData(dataAPI.meals);
     return dataAPI.meals;
   });
 
-// Output Data
-function showData(data) {
+// Show output data
+function outputData(data) {
   const menu = document.getElementById("mapping");
   data.forEach((item) => {
     const dataDetail = fetch(
@@ -20,7 +21,7 @@ function showData(data) {
       });
 
     const link = document.createElement("a");
-    link.href = `/recipes/${item.idMeal}`;
+    link.href = `/recipes/${item.idMeal}.html`;
 
     const container = document.createElement("div");
     container.className = "content-menu";
@@ -57,15 +58,21 @@ function showData(data) {
 async function handleReset() {
   // Reset now showed menus
   document.getElementById("search-input").value = "";
-  const node = document.getElementById("mapping");
-  node.replaceChildren();
+  const mapping = document.getElementById("mapping");
+  mapping.replaceChildren();
 
-  // Add default menus
+  // Updating icon search
+  document.getElementById("icons").innerHTML =
+    '<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" height="20" width="20" id="search-icon">' +
+    '<path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />' +
+    "</svg>";
+
+  // Add default recipes
   const clearData = await data;
-  showData(clearData);
+  outputData(clearData);
 }
 
-// Update Search Filter
+// Update Search
 async function handleSearch(event) {
   const icons = document.getElementById("icons");
   let content = "";
@@ -83,15 +90,15 @@ async function handleSearch(event) {
     icons.innerHTML = content;
   }
   // Reset now showed menus
-  const node = document.getElementById("mapping");
-  node.replaceChildren();
+  const mapping = document.getElementById("mapping");
+  mapping.replaceChildren();
 
-  // Filter new menu
+  // Updating new menu
   const oldData = await data;
   const newData = oldData.filter((updateData) => {
     const dataTitle = updateData.strMeal.toLowerCase();
     const searchInput = event.target.value.toLowerCase();
     return dataTitle.includes(searchInput);
   });
-  showData(newData);
+  outputData(newData);
 }
