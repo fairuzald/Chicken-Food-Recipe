@@ -1,0 +1,137 @@
+body {
+  max-width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  color: white;
+  background: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main {
+  max-height: 100vh;
+  width: 100vw;
+}
+
+p {
+  margin: 0px;
+  padding: 0;
+}
+
+.menu {
+  margin: 0px;
+  background-image: linear-gradient(to right, #171614, #090A05);
+}
+
+.menu p {
+  text-align: center;
+}
+
+.content img {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex: 1 1 0%;
+
+}
+
+.content {
+  position: relative;
+  margin: 0px;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  background: url("../src/bg.jpg") no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+
+.label h2 {
+  font-size: 3.7vh;
+}
+
+.label p {
+  font-size: 2.3vh;
+  margin-bottom: 2.5rem
+}
+
+.label button {
+  background-color: #e79033;
+  padding: 2.2vh;
+  cursor: pointer;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 2.1vh;
+  font-weight: 550;
+  transition: transform 0.3s ease-in-out;
+}
+
+.label button:hover {
+  transform: scale(1.1);
+  background-color: #f9ba33;
+}
+
+
+@media only screen and (min-width: 900px) {
+  .label {
+    position: absolute;
+    z-index: 20;
+    right: 7vw;
+    top: 36vh;
+    width: 30vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .label {
+    position: absolute;
+    z-index: 20;
+    right: 7vw;
+    top: 32vh;
+    margin-top: auto;
+    width: 30vw;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .label {
+    position: absolute;
+    z-index: 20;
+    right: 7vw;
+    top: 27vh;
+    margin-top: auto;
+    width: 30vw;
+  }
+
+}
+@media only screen and (max-width: 415px) {
+  .label {
+    position: absolute;
+    z-index: 20;
+    right: 7vw;
+    top: 23vh;
+    margin-top: auto;
+    width: 30vw;
+  }
+  .label h2{
+    font-size: 3.1vh;
+  }
+  .label p{
+    font-size: 2vh;
+  }
+  .label button{
+    background-color: #e79033;
+  padding: 1.4vh;
+  cursor: pointer;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 2.1vh;
+  font-weight: 550;
+  transition: transform 0.3s ease-in-out;
+  }
+}
