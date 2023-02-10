@@ -30,7 +30,6 @@ function outputData(data) {
     image.className = "menu-img";
     image.loading = "lazy";
     image.src = item.strMealThumb;
-    image.alt = item.strMeal
 
     const child = document.createElement("div");
     child.className = "details-menu";
