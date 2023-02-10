@@ -30,12 +30,31 @@ a {
 
 .detail-recipe {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
   align-items: center;
 }
-
+.back-button{
+  margin-left: 100px;
+  fill: #ffffff;
+  width: 2.3rem;
+  height: 2.3rem;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  background-color: #f5a046;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+}
+.back-button:hover{
+  fill: #f5a046;
+  background-color: #fdfdfd;
+  transition: all .25s ease-in-out;
+  transform: scale(1.1);
+}
 .detail-recipe img {
   padding: 2rem;
   border-radius: 40px;
@@ -44,12 +63,10 @@ a {
 }
 
 .content-recipe {
-  display: flex;
   padding: 2rem;
   font-size: 2.3vh;
   /* margin-left: 200px; */
   width: 50%;
-  flex-wrap: wrap;
 }
 
 ::-webkit-scrollbar {
@@ -80,6 +97,28 @@ a {
   color: #f5a046;
   font-size: 2.9vh;
 }
+@media only screen and (max-width: 700px) {
+  .back-button{
+    margin-left: 10vw;
+    fill: #ffffff;
+    width: 1.6rem;
+    height: 1.6rem;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #f5a046;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+  }
+  .back-button:hover{
+    fill: #f5a046;
+    background-color: #fdfdfd;
+    transition: all .25s ease-in-out;
+    transform: scale(1.1);
+  }
+}
 @media only screen and (max-width: 1255px) {
   .content-recipe h3 {
     color: #f5a046;
@@ -92,7 +131,7 @@ a {
     font-size: 2.3vh;
     /* margin-left: 200px; */
     width: 70vw;
-    flex-wrap: wrap;
+
   }
 }
 
@@ -108,7 +147,6 @@ a {
     font-size: 1.9vh;
     /* margin-left: 200px; */
     width: 70vw;
-    flex-wrap: wrap;
   }
 
   .detail-recipe img {
@@ -143,24 +181,4 @@ a {
 .ingredients, .recipe{
   font-size:2.2vh;
   line-height: 23px;
-}
-.back-button{
-  margin-left: 100px;
-  fill: #ffffff;
-  width: 2.3rem;
-  height: 2.3rem;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  background-color: #f5a046;
-  border: none;
-  border-radius: 100%;
-  cursor: pointer;
-  transition: all .25s ease-in-out;
-}
-.back-button:hover{
-  fill: #f5a046;
-  background-color: #fdfdfd;
-  transition: all .25s ease-in-out;
-  transform: scale(1.1);
 }
