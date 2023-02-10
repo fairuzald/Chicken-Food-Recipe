@@ -193,7 +193,7 @@ a {
   font-size: 2.45vh;
   line-height: 23px;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (max-width: 768px) {
 .ingredients,
 .recipe {
   font-size: 1.9vh;
