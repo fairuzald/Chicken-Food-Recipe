@@ -1,5 +1,4 @@
 html_template = """
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +8,6 @@ html_template = """
     <link rel="icon" href="../src/ayam.png" />
     <link rel="stylesheet" href="../style/styleHeader.css" />
     <link rel="stylesheet" href="../style/styleRecipe.css" />
-    <script src="../script/scrollNavbar.js"></script>
     <script src="../script/detail.js"></script>
     <title></title>
   </head>
@@ -48,6 +46,7 @@ html_template = """
       </div>
     </div>
   </body>
+  <script src="../script/scrollNavbar.js"></script>
 </html>
 """
 
