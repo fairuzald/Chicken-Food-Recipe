@@ -1,13 +1,11 @@
 body {
   max-width: 100vw;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
   color: white;
   background: linear-gradient(to bottom right, #151515 6.22%, #151515 139.21%);
-
-
 }
 
 a {
@@ -127,4 +125,39 @@ a {
     font-size: 3vh;
     text-align: center;
   }
+}
+.recipe-img{
+  width: 500px;
+  height: 500px;
+}
+.content-recipe p{
+  color: #f5a046;
+  font-size: 3vh;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.ingredients, .recipe{
+  font-size:2.2vh;
+  line-height: 23px;
+}
+.back-button{
+  margin-left: 100px;
+  fill: #ffffff;
+  width: 2.3rem;
+  height: 2.3rem;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  background-color: #f5a046;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+}
+.back-button:hover{
+  fill: #f5a046;
+  background-color: #fdfdfd;
+  transition: all .25s ease-in-out;
+  transform: scale(1.1);
 }
