@@ -17,13 +17,13 @@ a {
   min-height: 100vh;
   width: 100vw;
 }
- 
+
 .title {
   margin-top: 12vh;
   margin-bottom: 3vh;
   text-align: center;
   font-size: 4vh;
-  width:80vw;
+  width: 80vw;
   margin-right: auto;
   margin-left: auto;
 }
@@ -35,7 +35,8 @@ a {
   justify-content: space-around;
   align-items: center;
 }
-.back-button{
+
+.back-button {
   margin-left: 100px;
   fill: #ffffff;
   width: 2.3rem;
@@ -49,12 +50,14 @@ a {
   cursor: pointer;
   transition: all .25s ease-in-out;
 }
-.back-button:hover{
+
+.back-button:hover {
   fill: #f5a046;
   background-color: #fdfdfd;
   transition: all .25s ease-in-out;
   transform: scale(1.1);
 }
+
 .detail-recipe img {
   padding: 2rem;
   border-radius: 40px;
@@ -93,12 +96,14 @@ a {
 .title {
   color: #f5a046;
 }
+
 .content-recipe h3 {
   color: #f5a046;
   font-size: 2.9vh;
 }
+
 @media only screen and (max-width: 700px) {
-  .back-button{
+  .back-button {
     margin-left: 10vw;
     fill: #ffffff;
     width: 1.6rem;
@@ -112,13 +117,15 @@ a {
     cursor: pointer;
     transition: all .25s ease-in-out;
   }
-  .back-button:hover{
+
+  .back-button:hover {
     fill: #f5a046;
     background-color: #fdfdfd;
     transition: all .25s ease-in-out;
     transform: scale(1.1);
   }
 }
+
 @media only screen and (max-width: 1255px) {
   .content-recipe h3 {
     color: #f5a046;
@@ -167,18 +174,28 @@ a {
     text-align: center;
   }
 }
-.recipe-img{
+
+.recipe-img {
   width: 500px;
   height: 500px;
 }
-.content-recipe p{
+
+.content-recipe p {
   color: #f5a046;
-  font-size: 3vh;
+  font-size: 2.8vh;
   font-weight: bold;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
-.ingredients, .recipe{
-  font-size:2.2vh;
+
+.ingredients,
+.recipe {
+  font-size: 2.45vh;
   line-height: 23px;
 }
+@media only screen and (min-width: 768px){
+.ingredients,
+.recipe {
+  font-size: 1.9vh;
+  line-height: 21px;
+}}
