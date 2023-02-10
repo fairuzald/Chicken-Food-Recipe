@@ -1,5 +1,4 @@
 html_template = """
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,14 +30,14 @@ html_template = """
             </ul>
           </nav>
         </div>
-        <p class="logo"><a href="../index.html"><img src="../src/ayam.png" width="50" height="50"/></a></p>
+        <p class="logo"><a href="../index.html"><img src="../src/ayam.png" width="50" height="50" alt="KickIn"/></a></p>
       </header>
       <h1 class="title"></h1>
       <a href="../menu/recipes.html">
         <svg role="button" class="back-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
       </a>
       <div class="detail-recipe">
-        <img src="" alt="ok" class="recipe-img"></img>
+        <img src="" class="recipe-img"></img>
         <div class="content-recipe">
           <p>Ingredients :</p>
           <ul class="ingredients"></ul>

@@ -16,7 +16,9 @@ const paramsId = window.location.pathname
     document.querySelector(".title").innerText = food.strMeal;
 
     // Image
-    document.querySelector(".recipe-img").src = food.strMealThumb;
+    img = document.querySelector(".recipe-img")
+    img.src = food.strMealThumb;
+    img.alt = item.strMeal
 
     // Ingredients
     const ingredients = document.querySelector(".ingredients");
